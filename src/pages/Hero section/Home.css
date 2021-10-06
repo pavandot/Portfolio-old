@@ -1,5 +1,5 @@
 .Home {
-	background-color: #151315;
+	background-color: #131515;
 	color: #e0e0da;
 	display: flex;
 	justify-content: space-around;
@@ -11,7 +11,7 @@
 }
 .Home-dark {
 	background-color: white;
-	color: #151315;
+	color: #131515;
 }
 
 .hero {
@@ -23,7 +23,7 @@
 	width: 50%;
 }
 .info h1 {
-	margin-top: 100px;
+	margin-top: 50px;
 	font-size: 2rem;
 }
 
@@ -35,12 +35,15 @@
 
 .job {
 	font-size: 3rem;
+	color: #565757;
 }
 
 .about {
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	line-height: 1.7rem;
 	font-size: 1.1rem;
+	color: #565757;
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +57,7 @@
 		border-end-start-radius: 0px;
 		border-end-end-radius: 0px;
 		border-radius: 0px;
+		border: 0px;
 	}
 	.info {
 		width: 100%;

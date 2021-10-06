@@ -1,14 +1,11 @@
-import React, { useState } from "react";
 import TypeIt from "typeit-react";
-import { FaHandPaper } from "react-icons/fa";
-import LigthHero from "../images/Light-Hero.svg";
-import Darkhero from "../images/Dark-Hero.svg";
+import LigthHero from "../../images/Light-Hero.svg";
+import Darkhero from "../../images/Dark-Hero.svg";
 import "./Home.css";
 
 const Home = ({ theme, setTheme }) => {
-	const [isLodaing, setIsLoading] = useState(true);
 	return (
-		<section className={`Home ${!theme && "Home-dark"}`}>
+		<section className={`Home ${!theme && "Home-dark"}`} id='home'>
 			<div className='info'>
 				<h1>
 					<span>👋</span> My name is
