@@ -1,33 +1,29 @@
 import { FiSun } from "react-icons/fi";
 import { FaMoon, FaBars } from "react-icons/fa";
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 
 const Navbar = ({ theme, setTheme }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<section>
+		<section id='navbar-home'>
 			<div className={`Navbar ${theme && "Navbar-dark"}`}>
 				<ul>
 					<li>
-						<Link to='/' className={`Link Link-main ${theme && "Link-dark"}`} onClick={() => setIsOpen(false)}>
+						<a href='#navbar-home' className={`Link Link-main ${theme && "Link-dark"}`} onClick={() => setIsOpen(false)}>
 							🅿🅺
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to='/about' className={`Link nav-none ${theme && "Link-dark"}`}></Link>
+						<a href='#about' className={`Link nav-none ${theme && "Link-dark"}`}>
+							About
+						</a>
 					</li>
 					<li>
-						<Link to='/projects' className={`Link nav-none ${theme && "Link-dark"}`}>
+						<a href='#About' className={`Link nav-none ${theme && "Link-dark"}`}>
 							projects
-						</Link>
-					</li>
-					<li>
-						<Link to='/skills' className={`Link nav-none ${theme && "Link-dark"}`}>
-							skills
-						</Link>
+						</a>
 					</li>
 					<li>
 						<a href='https://drive.google.com/file/d/1yVsfsYxC-1Poxn8qgaudiPmn_JHbRkCi/view' className={`Link nav-none ${theme && "Link-dark"}`} target='blank'>
@@ -41,14 +37,14 @@ const Navbar = ({ theme, setTheme }) => {
 			<div className={`drop-down ${!isOpen && "drop-up"} ${!theme && "drop-down-light"}`}>
 				<ul>
 					<li>
-						<Link to='/projects' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
+						<a href='#about' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
 							Projects
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to='/skills' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
+						<a href='#about' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
 							Skills
-						</Link>
+						</a>
 					</li>
 					<li>
 						<a href='https://drive.google.com/file/d/1yVsfsYxC-1Poxn8qgaudiPmn_JHbRkCi/view' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)} target='blank'>

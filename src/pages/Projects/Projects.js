@@ -1,10 +1,10 @@
 import React from "react";
 import "./Projects.css";
-import Mega from "../images/mega.png";
-import Fedora from "../images/fedora.png";
-import Port from "../images/port.png";
-import Todo from "../images/todo.png";
-import Expense from "../images/expense.png";
+import Mega from "../../images/mega.png";
+import Fedora from "../../images/fedora.png";
+import Port from "../../images/port.png";
+import Todo from "../../images/todo.png";
+import Expense from "../../images/expense.png";
 const Projects = ({ theme, setTheme }) => {
 	return (
 		<section className={`Projects ${theme && "Projects-dark"}`}>
