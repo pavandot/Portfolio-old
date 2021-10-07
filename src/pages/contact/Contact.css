@@ -1,0 +1,39 @@
+.contact-dark {
+	color: rgb(194, 194, 194);
+	background-color: #131515;
+}
+.contact-light {
+	color: rgb(65, 65, 65);
+	background-color: white;
+}
+.contact {
+	width: 80%;
+	margin-top: 50px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.contact-me {
+	font-size: 1.5rem;
+	margin-right: 10px;
+}
+
+.contact-me-light {
+	color: #73a7b6;
+}
+
+.contact-me-dark {
+	color: #213d5c;
+}
+
+@media screen and (max-width: 600px) {
+	.contact {
+		width: 100%;
+		margin: 0px;
+		border-radius: 0px;
+	}
+}

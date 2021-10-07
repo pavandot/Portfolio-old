@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Hero section/Home";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
-// import Loding from "./Loding";
+import Contact from "./pages/contact/Contact";
+// import Loading from "./Loding";
 function App() {
 	const [theme, setTheme] = useState(false);
 	// const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
 			</div>
 			<About theme={theme} setTheme={setTheme} />
 			<Projects theme={theme} setTheme={setTheme} />
+			<Contact theme={theme} setTheme={setTheme} />
 		</section>
 	);
 }

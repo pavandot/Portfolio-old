@@ -1,10 +1,10 @@
 import React from "react";
 import "./Projects.css";
 import Mega from "../../images/mega.png";
-import Fedora from "../../images/fedora.png";
-import Port from "../../images/port.png";
-import Todo from "../../images/todo.png";
-import Expense from "../../images/expense.png";
+// import Fedora from "../../images/fedora.png";
+// import Port from "../../images/port.png";
+// import Todo from "../../images/todo.png";
+// import Expense from "../../images/expense.png";
 // icons
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiRedux, SiJavascript, SiCss3 } from "react-icons/si";

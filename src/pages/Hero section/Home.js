@@ -1,6 +1,6 @@
 import TypeIt from "typeit-react";
-import LigthHero from "../../images/Light-Hero.svg";
-import Darkhero from "../../images/Dark-Hero.svg";
+import LightHero from "../../images/Light-Hero.svg";
+import DarkHero from "../../images/Dark-Hero.svg";
 import "./Home.css";
 
 const Home = ({ theme, setTheme }) => {
@@ -8,7 +8,7 @@ const Home = ({ theme, setTheme }) => {
 		<section className={`Home ${!theme && "Home-dark"}`} id='home'>
 			<div className='info'>
 				<h1>
-					<span>👋</span> My name is
+					<span className='hand'>👋</span> My name is
 				</h1>
 				<p className='name'>Pavan Kumar</p>
 				<div className='job-container'>
@@ -34,7 +34,7 @@ const Home = ({ theme, setTheme }) => {
 			</div>
 			<div>
 				{}
-				<img src={theme ? LigthHero : Darkhero} alt='Drak' width='300' className='hero' />
+				<img src={theme ? LightHero : DarkHero} alt='Dark' width='300' className='hero' />
 			</div>
 		</section>
 	);
