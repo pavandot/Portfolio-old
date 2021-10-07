@@ -63,7 +63,7 @@ const About = ({ theme, setTheme }) => {
 				</div>
 			</div>
 			<div className='about-me-img'>
-				<div className={`about-me-img-fram`}>
+				<div className={`about-me-img-fram ${theme ? "about-me-img-fram-dark" : "about-me-img-fram-light"}`}>
 					<img src={profile} alt='' />
 				</div>
 			</div>

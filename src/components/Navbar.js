@@ -21,8 +21,13 @@ const Navbar = ({ theme, setTheme }) => {
 						</a>
 					</li>
 					<li>
-						<a href='#About' className={`Link nav-none ${theme && "Link-dark"}`}>
-							projects
+						<a href='#project' className={`Link nav-none ${theme && "Link-dark"}`}>
+							portfolio
+						</a>
+					</li>
+					<li>
+						<a href='#contact' className={`Link nav-none ${theme && "Link-dark"}`}>
+							contact
 						</a>
 					</li>
 					<li>
@@ -38,12 +43,12 @@ const Navbar = ({ theme, setTheme }) => {
 				<ul>
 					<li>
 						<a href='#about' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
-							Projects
+							About
 						</a>
 					</li>
 					<li>
-						<a href='#about' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
-							Skills
+						<a href='#project' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)}>
+							portfolio
 						</a>
 					</li>
 					<li>

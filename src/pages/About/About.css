@@ -59,11 +59,18 @@
 	justify-content: center;
 	align-items: center;
 }
-.about-me-img div {
+.about-me-img-fram {
 	width: 250px;
 	height: 250px;
-	border: 10px solid #a7d0db;
 	border-radius: 5px;
+}
+
+.about-me-img-fram-light {
+	border: 10px solid #a7d0db;
+}
+
+.about-me-img-fram-dark {
+	border: 10px solid #0e2a47;
 }
 
 .about-me-img img {
@@ -105,5 +112,6 @@
 	.about-me-img {
 		margin-top: 40px;
 		width: 100%;
+		margin-bottom: 20px;
 	}
 }

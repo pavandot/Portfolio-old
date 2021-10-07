@@ -24,10 +24,10 @@ const Home = ({ theme, setTheme }) => {
 							cursor: false,
 						}}
 						element={"p"}
-						className='job'
+						className={`job ${theme ? "dark-about" : "light-about"}`}
 					/>
 				</div>
-				<p className='about'>
+				<p className={`about ${theme ? "dark-about" : "light-about"}`}>
 					Hi! I am web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development. I enjoy creating beautifully
 					designed, intuitive and functional websites.
 				</p>

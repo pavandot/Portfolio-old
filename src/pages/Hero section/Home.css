@@ -43,7 +43,14 @@
 	margin-bottom: 40px;
 	line-height: 1.7rem;
 	font-size: 1.1rem;
-	color: #565757;
+	font-weight: 600;
+}
+
+.dark-about {
+	color: rgb(194, 194, 194);
+}
+.light-about {
+	color: rgb(65, 65, 65);
 }
 
 @media screen and (max-width: 600px) {
