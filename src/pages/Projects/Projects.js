@@ -3,7 +3,7 @@ import "./Projects.css";
 import Mega from "../../images/mega.png";
 // import Fedora from "../../images/fedora.png";
 // import Port from "../../images/port.png";
-// import Todo from "../../images/todo.png";
+import Todo from "../../images/todo.png";
 // import Expense from "../../images/expense.png";
 // icons
 import { FaReact } from "react-icons/fa";
@@ -51,6 +51,41 @@ const Projects = ({ theme, setTheme }) => {
 							Live Demo
 						</a>
 						<a href='https://github.com/pavandot/mega-shopping.git' className='project-btn-2'>
+							View Source
+						</a>
+					</div>
+				</div>
+			</div>
+			<div className='project-item project-2'>
+				<div className='project-img'>
+					<img src={Todo} alt='mega' />
+				</div>
+				<div className='project-info '>
+					<h1> Todo List App </h1>
+					<p>ToDo List App is generally used to maintain our day-to-day tasks or list everything that we have to do</p>
+					<div className='project-tech'>
+						<span>
+							<FaReact className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>React</p>
+						</span>
+						<span>
+							<SiTailwindcss className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>Tailwind CSS</p>
+						</span>
+						<span>
+							<SiJavascript className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>JavaScript</p>
+						</span>
+						<span>
+							<SiCss3 className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>CSS</p>
+						</span>
+					</div>
+					<div className='project-btn-group'>
+						<a href='https://pavan-todo.netlify.app/' className='project-btn-1'>
+							Live Demo
+						</a>
+						<a href='https://github.com/pavandot/todo-app' className='project-btn-2'>
 							View Source
 						</a>
 					</div>

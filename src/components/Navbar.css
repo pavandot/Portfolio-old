@@ -99,3 +99,7 @@ a {
 .bar-close {
 	display: none;
 }
+
+.nav-theme {
+	cursor: pointer;
+}

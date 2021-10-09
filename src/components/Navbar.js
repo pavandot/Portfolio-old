@@ -36,7 +36,7 @@ const Navbar = ({ theme, setTheme }) => {
 							resume
 						</a>
 					</li>
-					<li className={`Link icons ${theme && "Link-dark"}`}>{theme ? <FiSun onClick={() => setTheme(!theme)} /> : <FaMoon onClick={() => setTheme(!theme)} />}</li>
+					<li className={`Link nav-theme icons ${theme && "Link-dark"}`}>{theme ? <FiSun onClick={() => setTheme(!theme)} /> : <FaMoon onClick={() => setTheme(!theme)} />}</li>
 
 					<FaBars className={`bar Link ${theme && "Link-dark"} ${isOpen && "bar-close"}`} onClick={() => setIsOpen(!isOpen)} />
 					<GrClose className={`bar Link ${theme && "Link-dark"} ${!isOpen && "bar-close"}`} onClick={() => setIsOpen(!isOpen)} />
