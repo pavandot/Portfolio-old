@@ -1,5 +1,6 @@
 import { FiSun } from "react-icons/fi";
 import { FaMoon, FaBars } from "react-icons/fa";
+import { GrClose } from "react-icons/gr";
 import React from "react";
 import "./Navbar.css";
 import { useState } from "react";
@@ -36,7 +37,9 @@ const Navbar = ({ theme, setTheme }) => {
 						</a>
 					</li>
 					<li className={`Link icons ${theme && "Link-dark"}`}>{theme ? <FiSun onClick={() => setTheme(!theme)} /> : <FaMoon onClick={() => setTheme(!theme)} />}</li>
-					<FaBars className={`bar Link ${theme && "Link-dark"}`} onClick={() => setIsOpen(!isOpen)} />
+
+					<FaBars className={`bar Link ${theme && "Link-dark"} ${isOpen && "bar-close"}`} onClick={() => setIsOpen(!isOpen)} />
+					<GrClose className={`bar Link ${theme && "Link-dark"} ${!isOpen && "bar-close"}`} onClick={() => setIsOpen(!isOpen)} />
 				</ul>
 			</div>
 			<div className={`drop-down ${!isOpen && "drop-up"} ${!theme && "drop-down-light"}`}>
