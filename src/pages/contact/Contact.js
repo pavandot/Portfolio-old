@@ -18,7 +18,7 @@ const Contact = ({ theme }) => {
 			</div>
 			<p>Made with ❤️ by pavan</p>
 			<div>
-				<a href='#navbar-home' className={`${theme ? "contact-me-dark" : "contact-me-light"}`}>
+				<a href='#navbar-home' className={`${theme ? "contact-me-dark contact-up-dark" : "contact-me-light contact-up-light"} contact-up `}>
 					<FaArrowUp />
 				</a>
 			</div>

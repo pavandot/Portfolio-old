@@ -37,3 +37,18 @@
 		border-radius: 0px;
 	}
 }
+
+.contact-up {
+	transition: all 500ms ease;
+	padding: 5px;
+}
+.contact-up:hover {
+	border-radius: 100%;
+	color: #fff;
+}
+.contact-up-light:hover {
+	background-color: #73a7b6;
+}
+.contact-up-dark:hover {
+	background-color: #213d5c;
+}
