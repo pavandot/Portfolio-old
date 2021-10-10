@@ -32,7 +32,7 @@ const Navbar = ({ theme, setTheme }) => {
 						</a>
 					</li>
 					<li>
-						<a href='https://drive.google.com/file/d/1yVsfsYxC-1Poxn8qgaudiPmn_JHbRkCi/view' className={`Link nav-none ${theme && "Link-dark"}`} target='blank'>
+						<a href='https://drive.google.com/file/d/1BjSi6Y4BQRN1RtgDYHpQq56Hn9yn61Ny/view?usp=sharing' className={`Link nav-none ${theme && "Link-dark"}`} target='blank'>
 							resume
 						</a>
 					</li>
@@ -55,7 +55,7 @@ const Navbar = ({ theme, setTheme }) => {
 						</a>
 					</li>
 					<li>
-						<a href='https://drive.google.com/file/d/1yVsfsYxC-1Poxn8qgaudiPmn_JHbRkCi/view' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)} target='blank'>
+						<a href='https://drive.google.com/file/d/1BjSi6Y4BQRN1RtgDYHpQq56Hn9yn61Ny/view?usp=sharing' className={`bar-link ${!theme && "bar-link-light"}`} onClick={() => setIsOpen(false)} target='blank'>
 							resume
 						</a>
 					</li>
