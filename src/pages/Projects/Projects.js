@@ -4,7 +4,7 @@ import Mega from "../../images/mega.png";
 // import Fedora from "../../images/fedora.png";
 // import Port from "../../images/port.png";
 import Todo from "../../images/todo.png";
-// import Expense from "../../images/expense.png";
+import Expense from "../../images/expense.png";
 // icons
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiRedux, SiJavascript, SiCss3 } from "react-icons/si";
@@ -86,6 +86,38 @@ const Projects = ({ theme, setTheme }) => {
 							Live Demo
 						</a>
 						<a href='https://github.com/pavandot/todo-app' className='project-btn-2'>
+							View Source
+						</a>
+					</div>
+				</div>
+			</div>
+			<div className='project-item project-2'>
+				<div className='project-img'>
+					<img src={Expense} alt='mega' />
+				</div>
+				<div className='project-info '>
+					<h1> Expense Tracker</h1>
+					<p> Expense Tracker is a web application that helps to keep an accurate record of your money inflow and outflow.</p>
+					<div className='project-tech'>
+						<span>
+							<FaReact className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>React</p>
+						</span>
+
+						<span>
+							<SiJavascript className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>JavaScript</p>
+						</span>
+						<span>
+							<SiCss3 className={`project-icons ${theme ? "project-icons-dark" : "project-icons-light"}`} />
+							<p>CSS</p>
+						</span>
+					</div>
+					<div className='project-btn-group'>
+						<a href='https://pavandot-expense-tracker.netlify.app/' className='project-btn-1'>
+							Live Demo
+						</a>
+						<a href='https://github.com/pavandot/expense-tracker' className='project-btn-2'>
 							View Source
 						</a>
 					</div>
